@@ -12,3 +12,4 @@ app = Flask(__name__)
 
     desc = []
     news = []
+    img = []
