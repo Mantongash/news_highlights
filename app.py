@@ -11,3 +11,4 @@ app = Flask(__name__)
     articles = topheadlines ["articles"]
 
     desc = []
+    news = []
