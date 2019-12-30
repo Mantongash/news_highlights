@@ -18,3 +18,4 @@ app = Flask(__name__)
       myarticles = articles[i]
 
       news.append(myarticles["title"])
+      desc.append(myarticles["description"])
