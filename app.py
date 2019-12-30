@@ -23,3 +23,5 @@ def index():
             img.append(myarticles["urlToImage"])
 
         mylist = zip(news, desc, img)
+
+        return render_template("index.html", context = mylist)
