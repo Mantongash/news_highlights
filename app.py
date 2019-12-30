@@ -9,3 +9,5 @@ app = Flask(__name__)
     topheadlines = newsapi.get_top_headlines(source = "al-jazeera-english")
 
     articles = topheadlines ["articles"]
+
+    desc = []
