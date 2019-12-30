@@ -13,3 +13,6 @@ app = Flask(__name__)
     desc = []
     news = []
     img = []
+
+    for i in range(len(articles)):
+      myarticles = articles[i]
