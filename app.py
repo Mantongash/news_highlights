@@ -21,3 +21,5 @@ def index():
             news.append(myarticles["title"])
             desc.append(myarticles["description"])
             img.append(myarticles["urlToImage"])
+
+        mylist = zip(news, desc, img)
