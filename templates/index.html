@@ -18,8 +18,11 @@
     </div>
     <div class="container">
       {% for new, des, img in context %} {% endfor %}
-      <img src="{{i}}" alt="">  
-      <h3>News: </h3> {{new}}
+      <img src="{{i}}" alt="" />
+      <h3>News:</h3>
+      {{new}}
+      <h4>Description:</h4>
+      {{desc}}
     </div>
   </body>
 </html>
