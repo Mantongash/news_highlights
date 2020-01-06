@@ -17,12 +17,12 @@
       <h1 style="color:black">Flask News Web Application</h1>
     </div>
     <div class="container">
-      {% for new, des, img in context %} {% endfor %}
+      {% for new, des, img in context %}
       <img src="{{i}}" alt="" />
       <h3>News:</h3>
       {{new}}
       <h4>Description:</h4>
-      {{desc}}
+      {{desc}} {% endfor %}
     </div>
   </body>
 </html>
