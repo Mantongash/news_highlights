@@ -20,8 +20,10 @@
       {% for new, des, img in context %}
       <img src="{{i}}" alt="" />
       <h3>News:</h3>
+      <img src="{{img}}" class="img-fluid" alt="">
       {{new}}
       <h4>Description:</h4>
+      <p>{{des}}</p>
       {{desc}} {% endfor %}
     </div>
   </body>
