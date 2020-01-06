@@ -27,6 +27,11 @@ def index():
     return render_template("index.html", context=mylist)
 
 
+@app.route("/")
+def home():
+    return render_template("home.html")
+
+
 @app.route("/bbc")
 def bbc():
     newsapi = NewsApiClient(api_key="519b09bcd038461aa28d5cf702b9e0e9")
