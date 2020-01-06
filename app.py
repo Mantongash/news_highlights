@@ -29,7 +29,8 @@ def index():
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+
+   return render_template("home.html")
 
 
 @app.route("/bbc")
@@ -42,6 +43,8 @@ def bbc():
     desc = []
     news = []
     img = []
+    url = []
+    pubAt = []
 
     for i in range(len(articles)):
         myarticles = articles[i]

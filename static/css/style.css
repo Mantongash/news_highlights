@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+h1 {
+  font-family: "Quicksand";
+  color: brown;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+}
