@@ -12,16 +12,29 @@
     />
     <link
       rel="stylesheet"
+      type="text/css"
       href="{{ url_for('static', filename = 'css/style.css') }}"
     />
     <title>Flask News Website</title>
   </head>
   <body>
-    <h1 class="text-center my-4">News Highlight Website</h1>
-    <div class="container">
-      <div class="row">
-        <div class="card" width="300" height="300">
+    <div class="container-fluid">
+      <header>
+        <h1 class="text-center my-4">News Highlights Website</h1>
+        <p class="text-center sub">The best news in the planet</p>
+      </header>
+      <div class="sources d-flex justify-content-around container my-4">
+        <div class="card">
           <p>BBC</p>
+        </div>
+        <div class="card">
+          <p>CNN</p>
+        </div>
+        <div class="card">
+          <p>Al-Jazeera-English</p>
+        </div>
+        <div class="card">
+          <p>ABC News</p>
         </div>
       </div>
     </div>

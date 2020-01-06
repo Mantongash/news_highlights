@@ -29,8 +29,7 @@ def index():
 
 @app.route("/")
 def home():
-
-   return render_template("home.html")
+    return render_template("home.html")
 
 
 @app.route("/bbc")
@@ -52,8 +51,10 @@ def bbc():
         news.append(myarticles["title"])
         desc.append(myarticles["description"])
         img.append(myarticles["urlToImage"])
+        url.append(myarticles["url"])
+        pubAt.append(myarticles["pubAt"])
 
-    mylist = zip(news, desc, img)
+    mylist = zip(news, desc, img, url, pubAt)
 
     return render_template("bbc.html", context=mylist)
 

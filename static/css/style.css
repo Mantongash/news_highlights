@@ -1,11 +1,39 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
 
-h1 {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+.sub {
   font-family: "Quicksand";
-  color: brown;
+  color: #fff;
+}
+
+header {
+  background-color: orangered;
+  padding: 50px 0;
 }
 
 .card {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.card {
+  color: crimson;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card:hover {
+  background: chartreuse;
+  color: black;
 }
