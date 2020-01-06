@@ -4,7 +4,7 @@ from newsapi import NewsApiClient
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/index")
 def index():
     newsapi = NewsApiClient(api_key="519b09bcd038461aa28d5cf702b9e0e9")
     topheadlines = newsapi.get_top_headlines(sources="al-jazeera-english")
