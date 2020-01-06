@@ -52,7 +52,7 @@ def bbc():
         desc.append(myarticles["description"])
         img.append(myarticles["urlToImage"])
         url.append(myarticles["url"])
-        pubAt.append(myarticles["pubAt"])
+        pubAt.append(myarticles["publishedAt"])
 
     mylist = zip(news, desc, img, url, pubAt)
 

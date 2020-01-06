@@ -17,14 +17,14 @@
       <h1 style="color:black">Flask News Web Application</h1>
     </div>
     <div class="container">
-      {% for new, des, img in context %}
+      {% for new, des, img, pubAt, url in context %}
       <img src="{{i}}" alt="" />
       <h3>News:</h3>
       <img src="{{img}}" class="img-fluid" alt="" />
       {{new}}
       <h4>Description:</h4>
       <p>{{des}}</p>
-      {{desc}} {% endfor %}
+      <p>Published on: {{pubAt}}</p> {% endfor %}
     </div>
   </body>
 </html>
