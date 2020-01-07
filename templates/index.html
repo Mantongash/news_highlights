@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Flask Aljazeera English</title>
+    <title>BBC</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -14,19 +14,21 @@
   </head>
   <body>
     <div class="jumbotron" style="color:black">
-      <h1 style="color:black">Flask News Web Application</h1>
+      <h1 style="color:black">Aljazeera News</h1>
     </div>
     <div class="container">
       {% for new, des, img, url, pubAt in context %}
       <img src="{{i}}" alt="" />
       <h3>News:</h3>
-      <img src="{{img}}" class="img-fluid" alt="" width="300" />
-      <p>{{new}}</p>
+      <img src="{{img}}" class="img-fluid" alt="" />
+      {{new}}
       <h4>Description:</h4>
       <p>{{des}}</p>
-      <p>Published on {{pubAt}}</p>
-      <a href="{{url}}" target="_blank"></a>
-      {{desc}} {% endfor %}
+      <p>
+        <a href="{{url}}" class="btn-primary p-3" target="_blank">Read More</a>
+      </p>
+      <p>Published on: {{pubAt}}</p>
+      {% endfor %}
     </div>
   </body>
 </html>

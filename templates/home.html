@@ -14,6 +14,7 @@
       rel="stylesheet"
       type="text/css"
       href="{{ url_for('static', filename = 'css/style.css') }}"
+      target="_blank"
     />
     <title>Flask News Website</title>
   </head>
@@ -24,18 +25,26 @@
         <p class="text-center sub">The best news in the planet</p>
       </header>
       <div class="sources d-flex justify-content-around container my-4">
-        <div class="card">
-          <p><a href="{{url_for('bbc')}}">BBC</a></p>
-        </div>
-        <div class="card">
-          <p>CNN</p>
-        </div>
-        <div class="card">
-          <p>Al-Jazeera-English</p>
-        </div>
-        <div class="card">
-          <p>ABC News</p>
-        </div>
+        <a href="{{url_for('bbc')}}" target="_blank">
+          <div class="card">
+            <p>BBC</p>
+          </div>
+        </a>
+        <a href="{{url_for('cnn')}}" target="_blank">
+          <div class="card">
+            <p>CNN</p>
+          </div>
+        </a>
+        <a href="{{url_for('index')}}" target="_blank">
+          <div class="card">
+            <p>Al-Jazeera-English</p>
+          </div>
+        </a>
+        <a href="{{url_for('abc')}}" target="_blank">
+          <div class="card">
+            <p>ABC News</p>
+          </div>
+        </a>
       </div>
     </div>
   </body>
