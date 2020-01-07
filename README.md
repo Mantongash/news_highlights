@@ -4,7 +4,7 @@
 
 ---
 
-This is a Flask app that cnsumes the News API and displays news depending on various sources. A user can browse various sources and view news in those sources.
+This is a Flask app that consumes the News API and displays news depending on various sources. A user can browse various sources and view news in those sources.
 
 ---
 
@@ -46,7 +46,7 @@ Open your terminal and move to a directory where you would like to store the pro
 
 ---
 
-Since it's a command line application, it has no live link, but you can access the repo [here](https://news-hig.herokuapp.com/).
+The life link of this app can be found [here](https://news-hig.herokuapp.com/).
 
 ---
 
