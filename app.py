@@ -14,6 +14,8 @@ def index():
     desc = []
     news = []
     img = []
+    url = []
+    pubAt = []
 
     for i in range(len(articles)):
         myarticles = articles[i]
@@ -21,8 +23,10 @@ def index():
         news.append(myarticles["title"])
         desc.append(myarticles["description"])
         img.append(myarticles["urlToImage"])
+        url.append(myarticles["url"])
+        pubAt.append(myarticles["publishedAt"])
 
-    mylist = zip(news, desc, img)
+    mylist = zip(news, desc, img, url, pubAt)
 
     return render_template("index.html", context=mylist)
 
