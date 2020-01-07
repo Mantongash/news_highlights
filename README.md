@@ -1,4 +1,4 @@
-# Password Locker
+# Flask News App
 
 ### Description
 
